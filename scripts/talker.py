@@ -18,7 +18,7 @@ def talker():
     msg = Twist()
     msg.linear.x = random.uniform(0.0, 3.0)
     msg.angular.z = random.uniform(-5.0, 5.0)
-    rospy.loginfo("Drunk walking: Speed = %f and angle = %s" % (msg.linear.x, msg.angular.z))
+    # rospy.loginfo("Drunk walking: Speed = %f and angle = %s" % (msg.linear.x, msg.angular.z))
     pub.publish(msg)
     rate.sleep()
 
