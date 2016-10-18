@@ -1,10 +1,11 @@
 <launch>
   <node pkg="turtlesim" name="turtlesim" type="turtlesim_node" />
+  <node pkg="speech_controlled_turtle" name="talker" type="talker.py" output="screen" />
 
   <!-- Params for if we are launching mic vs. fake speech input -->
-  <arg name="speech_gui" default="true" />
+  <arg name="speech_gui" default="false" />
 
-  <arg name="config_file" default="$(find hlpr_speech_recognition)/config/speech.yaml" />
+  <arg name="config_file" default="$(find speech_controlled_turtle)/config/speech.yaml" />
   <arg name="yaml_list" default="$(find speech_controlled_turtle)/data/speech_controlled_turtle.yaml" />
 
   <!-- Params for real input with microphone -->
