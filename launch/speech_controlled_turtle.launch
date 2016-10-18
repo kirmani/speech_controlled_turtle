@@ -2,6 +2,9 @@
   <node pkg="turtlesim" name="turtlesim" type="turtlesim_node" />
   <node pkg="speech_controlled_turtle" name="talker" type="talker.py" output="screen" />
 
+  <!-- Params for if we are launching mic vs. fake speech input -->
+  <arg name="speech_gui" default="true" />
+
   <arg name="config_file" default="$(find hlpr_speech_recognition)/config/speech.yaml" />
   <arg name="yaml_list" default="$(find speech_controlled_turtle)/data/speech_controlled_turtle.yaml" />
 
@@ -18,7 +21,10 @@
     <arg name="yaml_list" value="$(arg yaml_list)"/>
   </include>
 
-  <node name="speech_recognizer" pkg="hlpr_speech_recognition" type="speech_recognizer" respawn="false" output="screen">
+  <!-- Start the GUI if speech_gui set to true -->
+  <node name="speech_gui" pkg="hlpr_speech_recognition" type="speech_gui" respawn="false" output="screen" if="$(arg speech_gui)"/>
+
+  <node name="speech_recognizer" pkg="hlpr_speech_recognition" type="speech_recognizer" respawn="false" output="screen" unless="$(arg speech_gui)">
     <param name="dict_path" value="$(arg dict_path)" />
     <param name="kps_path" value="$(arg kps_path)" />
   </node>
