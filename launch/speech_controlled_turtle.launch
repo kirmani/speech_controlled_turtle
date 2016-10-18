@@ -3,19 +3,20 @@
   <node pkg="speech_controlled_turtle" name="talker" type="talker.py" output="screen" />
 
   <arg name="config_file" default="$(find hlpr_speech_recognition)/config/speech.yaml" />
-  <arg name="yaml_list" default="$(find hlpr_speech_recognition)/data/kps.yaml" />
+  <arg name="yaml_list" default="$(find speech_controlled_turtle)/data/speech_controlled_turtle.yaml" />
 
   <!-- Params for real input with microphone -->
-  <arg name="dict_path" default="$(find hlpr_speech_recognition)/data/kps.dic" />
-  <arg name="kps_path" default="$(find hlpr_speech_recognition)/data/kps.txt" />
+  <arg name="dict_path" default="$(find speech_controlled_turtle)/data/speech_controlled_turtle.dic" />
+  <arg name="kps_path" default="$(find speech_controlled_turtle)/data/speech_controlled_turtle.txt" />
 
   <!-- Load parameters for speech -->
   <rosparam command="load" file="$(arg config_file)" />
 
   <!-- Start the speech_listener node recording action server -->
-  <node name="speech_listener" pkg="hlpr_speech_recognition" type="speech_listener" respawn="false" output="screen" >
-    <rosparam param="yaml_list" subst_value="True"> [$(arg yaml_list)]</rosparam>
-  </node>
+  <include file="$(find hlpr_speech_recognition)/launch/speech_listener.launch">
+    <arg name="config_file" value="$(arg config_file)"/>
+    <arg name="yaml_list" value="$(arg yaml_list)"/>
+  </include>
 
   <node name="speech_recognizer" pkg="hlpr_speech_recognition" type="speech_recognizer" respawn="false" output="screen">
     <param name="dict_path" value="$(arg dict_path)" />
