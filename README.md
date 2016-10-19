@@ -1,4 +1,4 @@
-# speech_controlled_turtle
+# Speech Controlled Turtle
 ## Human-Robot Interaction ROS Project #3
 
 Implemented a speech controlled turtlebot simulator in ROS using sphinxbase and
