@@ -1,4 +1,4 @@
-Language model created by QuickLM on Sun Oct 16 18:20:26 EDT 2016
+Language model created by QuickLM on Tue Oct 18 19:45:19 EDT 2016
 Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
 
 The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
@@ -7,89 +7,62 @@ The code that was used to produce this language model is available in Open Sourc
 Please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
-This model based on a corpus of 9 sentences and 21 words
+This model based on a corpus of 5 sentences and 14 words
 
 \data\
-ngram 1=21
-ngram 2=29
-ngram 3=22
+ngram 1=14
+ngram 2=18
+ngram 3=13
 
 \1-grams:
--0.9488 </s> -0.3010
--0.9488 <s> -0.2492
--1.9031 ARE -0.2900
--1.9031 AROUND -0.2492
--1.9031 BEGIN -0.2956
--1.9031 CAN -0.2900
--1.9031 EXPERIMENT -0.2492
--1.9031 EXPLORE! -0.2492
--1.9031 FORWARD -0.2492
--1.9031 HEAR -0.2956
--1.9031 HELLO! -0.2492
--1.9031 HOW -0.2956
--1.9031 LEFT -0.2492
--1.9031 LET'S -0.2956
--1.9031 ME? -0.2492
--1.9031 MOVE -0.2956
--1.9031 RIGHT -0.2492
--1.9031 THE -0.2956
--1.9031 TODAY? -0.2492
--1.4260 TURN -0.2844
--1.6021 YOU -0.2900
+-0.9638 </s> -0.3010
+-0.9638 <s> -0.2511
+-1.3617 A -0.2817
+-1.6628 DO -0.2817
+-1.6628 FLIP -0.2511
+-1.6628 FORWARD -0.2511
+-1.6628 GO -0.2915
+-1.6628 LEFT -0.2511
+-1.6628 MOVE -0.2915
+-1.6628 RIGHT -0.2511
+-1.6628 SHOT! -0.2511
+-1.6628 TAKE -0.2817
+-1.6628 THE -0.2915
+-1.6628 TO -0.2915
 
 \2-grams:
--1.2553 <s> CAN 0.0000
--1.2553 <s> EXPLORE! 0.0000
--1.2553 <s> HELLO! 0.0000
--1.2553 <s> HOW 0.0000
--1.2553 <s> LET'S 0.0000
--1.2553 <s> MOVE 0.0000
--0.7782 <s> TURN 0.0000
--0.3010 ARE YOU -0.1761
--0.3010 AROUND </s> -0.3010
--0.3010 BEGIN THE 0.0000
--0.3010 CAN YOU -0.1761
--0.3010 EXPERIMENT </s> -0.3010
--0.3010 EXPLORE! </s> -0.3010
+-1.0000 <s> DO 0.0000
+-1.0000 <s> GO 0.0000
+-1.0000 <s> MOVE 0.0000
+-1.0000 <s> TAKE 0.0000
+-1.0000 <s> TO 0.0000
+-0.6021 A FLIP 0.0000
+-0.6021 A SHOT! 0.0000
+-0.3010 DO A -0.1761
+-0.3010 FLIP </s> -0.3010
 -0.3010 FORWARD </s> -0.3010
--0.3010 HEAR ME? 0.0000
--0.3010 HELLO! </s> -0.3010
--0.3010 HOW ARE 0.0000
+-0.3010 GO LEFT 0.0000
 -0.3010 LEFT </s> -0.3010
--0.3010 LET'S BEGIN 0.0000
--0.3010 ME? </s> -0.3010
 -0.3010 MOVE FORWARD 0.0000
 -0.3010 RIGHT </s> -0.3010
--0.3010 THE EXPERIMENT 0.0000
--0.3010 TODAY? </s> -0.3010
--0.7782 TURN AROUND 0.0000
--0.7782 TURN LEFT 0.0000
--0.7782 TURN RIGHT 0.0000
--0.6021 YOU HEAR 0.0000
--0.6021 YOU TODAY? 0.0000
+-0.3010 SHOT! </s> -0.3010
+-0.3010 TAKE A -0.1761
+-0.3010 THE RIGHT 0.0000
+-0.3010 TO THE 0.0000
 
 \3-grams:
--0.3010 <s> CAN YOU
--0.3010 <s> EXPLORE! </s>
--0.3010 <s> HELLO! </s>
--0.3010 <s> HOW ARE
--0.3010 <s> LET'S BEGIN
+-0.3010 <s> DO A
+-0.3010 <s> GO LEFT
 -0.3010 <s> MOVE FORWARD
--0.7782 <s> TURN AROUND
--0.7782 <s> TURN LEFT
--0.7782 <s> TURN RIGHT
--0.3010 ARE YOU TODAY?
--0.3010 BEGIN THE EXPERIMENT
--0.3010 CAN YOU HEAR
--0.3010 HEAR ME? </s>
--0.3010 HOW ARE YOU
--0.3010 LET'S BEGIN THE
+-0.3010 <s> TAKE A
+-0.3010 <s> TO THE
+-0.3010 A FLIP </s>
+-0.3010 A SHOT! </s>
+-0.3010 DO A FLIP
+-0.3010 GO LEFT </s>
 -0.3010 MOVE FORWARD </s>
--0.3010 THE EXPERIMENT </s>
--0.3010 TURN AROUND </s>
--0.3010 TURN LEFT </s>
--0.3010 TURN RIGHT </s>
--0.3010 YOU HEAR ME?
--0.3010 YOU TODAY? </s>
+-0.3010 TAKE A SHOT!
+-0.3010 THE RIGHT </s>
+-0.3010 TO THE RIGHT
 
 \end\

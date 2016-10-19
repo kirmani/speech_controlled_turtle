@@ -1,26 +1,14 @@
-tag: "GREETING"
-speech: ["HELLO!"]
----
-tag: "HEAR_CHECK"
-speech: ["CAN YOU HEAR ME?"]
----
-tag: "SMALL_TALK"
-speech: ["HOW ARE YOU TODAY?"]
----
-tag: "START_EXP"
-speech: ["LET'S BEGIN THE EXPERIMENT"]
----
 tag: "MOVE_FORWARD"
 speech: ["MOVE FORWARD"]
 ---
 tag: "TURN_90"
-speech: ["TURN LEFT"]
+speech: ["GO LEFT"]
 ---
 tag: "TURN_180"
-speech: ["TURN AROUND"]
+speech: ["DO A FLIP"]
 ---
 tag: "TURN_270"
-speech: ["TURN RIGHT"]
+speech: ["TO THE RIGHT"]
 ---
 tag: "RANDOM_WALK"
-speech: ["EXPLORE!"]
+speech: ["TAKE A SHOT!"]
