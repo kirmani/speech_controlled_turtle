@@ -11,3 +11,6 @@ hlpr_speech.
 |Do a flip!   |Turns turtle around.           |
 |To the right!|Turns turtle right.            |
 |Take a shot! |Turtle begins a drunken walk.  |
+
+
+[Video Demo](https://youtu.be/GBTwYhUw9IY).
