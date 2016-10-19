@@ -13,4 +13,4 @@ hlpr_speech.
 |Take a shot! |Turtle begins a drunken walk.  |
 
 
-*[Video Demo]*(https://youtu.be/GBTwYhUw9IY).
+**[Video Demo](https://youtu.be/GBTwYhUw9IY)**.
